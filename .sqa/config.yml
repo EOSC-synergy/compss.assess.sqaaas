@@ -15,60 +15,60 @@ sqa_criteria:
     repos:
       github.com/bsc-wdc/compss git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-teal-panda.sh
-        container: qc.acc_flimsy-lilac-oriole
+        - /usr/bin/env sh .sqa/script.sloppy-salmon-insect.sh
+        container: qc.acc_wheezy-sapphire-ibis
   QC.Doc:
     repos:
       github.com/bsc-wdc/compss find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-buff-bison.sh
-        container: qc.doc_squeaky-purple-capybara
+        - /usr/bin/env sh .sqa/script.whiny-myrtle-bloodhound.sh
+        container: qc.doc_tacky-ochre-foxhound
       github.com/bsc-wdc/compss git:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-ivory-crane.sh
-        container: qc.doc_whiny-puce-eel
+        - /usr/bin/env sh .sqa/script.smelly-myrtle-beagle.sh
+        container: qc.doc_sleepy-ochre-dog
       github.com/bsc-wdc/compss markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-purple-hamster.sh
-        container: qc.doc_cranky-tomato-worm
+        - /usr/bin/env sh .sqa/script.stuffy-puce-moth.sh
+        container: qc.doc_tacky-burgundy-tzu
       github.com/bsc-wdc/compss restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-olive-gibbon.sh
-        container: qc.doc_hasty-chocolate-leopard
+        - /usr/bin/env sh .sqa/script.woozy-corn-javanese.sh
+        container: qc.doc_lumpy-denim-bracke
   QC.Lic:
     repos:
       github.com/bsc-wdc/compss licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-bronze-kiwi.sh
-        container: qc.lic_lumpy-taupe-heron
+        - /usr/bin/env sh .sqa/script.muzzy-heliotrope-bird.sh
+        container: qc.lic_whiny-purple-scorpion
   QC.Sec:
     repos:
       github.com/bsc-wdc/compss bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-rose-tamarin.sh
-        container: qc.sec_chewy-bistre-mammoth
+        - /usr/bin/env sh .sqa/script.ready-asparagus-leopard.sh
+        container: qc.sec_cozy-xanthic-robin
   QC.Sty:
     repos:
       github.com/bsc-wdc/compss checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-red-harrier.sh
-        container: qc.sty_cheeky-mauve-walrus
+        - /usr/bin/env sh .sqa/script.sloppy-rose-neanderthal.sh
+        container: qc.sty_jumpy-buff-bloodhound
       github.com/bsc-wdc/compss flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-teal-dane.sh
-        container: qc.sty_muzzy-ultramarine-buffalo
+        - /usr/bin/env sh .sqa/script.flimsy-red-kangaroo.sh
+        container: qc.sty_lanky-smalt-donkey
       github.com/bsc-wdc/compss hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-aqua-earwig.sh
-        container: qc.sty_cheeky-turquoise-bee
+        - /usr/bin/env sh .sqa/script.freaky-white-tuatara.sh
+        container: qc.sty_cranky-platinum-starfish
       github.com/bsc-wdc/compss jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-sepia-swan.sh
-        container: qc.sty_ready-orange-turkey
+        - /usr/bin/env sh .sqa/script.hilly-heliotrope-audemer.sh
+        container: qc.sty_muzzy-xanthic-lemur
   QC.Ver:
     repos:
       github.com/bsc-wdc/compss get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-brown-eagle.sh
-        container: qc.ver_wiggy-sapphire-sponge
+        - /usr/bin/env sh .sqa/script.cranky-denim-penguin.sh
+        container: qc.ver_shabby-tangerine-grasshopper
 timeout: 5400
