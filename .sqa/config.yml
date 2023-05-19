@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.8
+      branch: release/1.7.10
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/bsc-wdc/compss:
       branch: stable
@@ -15,60 +15,66 @@ sqa_criteria:
     repos:
       github.com/bsc-wdc/compss git:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-viridian-dane.sh
-        container: qc.acc_muzzy-turquoise-squirrel
+        - /usr/bin/env sh .sqa/script.shaggy-crimson-greyhound.sh
+        container: qc.acc_blurry-pumpkin-lynx
   QC.Doc:
     repos:
       github.com/bsc-wdc/compss find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-cornflower-beaver.sh
-        container: qc.doc_geeky-brown-caterpillar
+        - /usr/bin/env sh .sqa/script.trippy-white-dollar.sh
+        container: qc.doc_jumpy-buff-bullfrog
       github.com/bsc-wdc/compss git:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-sangria-owl.sh
-        container: qc.doc_cozy-chartreuse-avocet
+        - /usr/bin/env sh .sqa/script.snappy-peach-spaniel.sh
+        container: qc.doc_clammy-amethyst-moth
       github.com/bsc-wdc/compss markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-puce-moorhen.sh
-        container: qc.doc_frumpy-cyan-iguana
+        - /usr/bin/env sh .sqa/script.sleazy-teal-stoat.sh
+        container: qc.doc_droopy-pear-dingo
       github.com/bsc-wdc/compss restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-bronze-axolotl.sh
-        container: qc.doc_woolly-champagne-opossum
+        - /usr/bin/env sh .sqa/script.queasy-rose-ragdoll.sh
+        container: qc.doc_leaky-corn-squirrel
   QC.Lic:
     repos:
       github.com/bsc-wdc/compss licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-peach-monkey.sh
-        container: qc.lic_bumpy-brown-starfish
+        - /usr/bin/env sh .sqa/script.sleazy-cardinal-fly.sh
+        container: qc.lic_nerdy-sepia-fowl
+  QC.Met:
+    repos:
+      github.com/bsc-wdc/compss cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.queasy-russet-caracal.sh
+        container: qc.met_droopy-yellow-capybara
   QC.Sec:
     repos:
       github.com/bsc-wdc/compss bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-persimmon-moorhen.sh
-        container: qc.sec_boozy-rose-ray
+        - /usr/bin/env sh .sqa/script.tasty-puce-bullfrog.sh
+        container: qc.sec_muggy-chartreuse-impala
   QC.Sty:
     repos:
       github.com/bsc-wdc/compss checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-wisteria-squid.sh
-        container: qc.sty_hazy-indigo-mau
+        - /usr/bin/env sh .sqa/script.pretty-turquoise-baboon.sh
+        container: qc.sty_paltry-lavender-kudu
       github.com/bsc-wdc/compss flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-sapphire-capuchin.sh
-        container: qc.sty_woozy-tomato-pinscher
+        - /usr/bin/env sh .sqa/script.bumpy-tan-numbat.sh
+        container: qc.sty_cloudy-wisteria-ladybird
       github.com/bsc-wdc/compss hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-beige-chihuahua.sh
-        container: qc.sty_snippy-sangria-akita
+        - /usr/bin/env sh .sqa/script.breezy-indigo-angelfish.sh
+        container: qc.sty_thirsty-xanthic-rottweiler
       github.com/bsc-wdc/compss jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-emerald-iguana.sh
-        container: qc.sty_scummy-mauve-dachshund
+        - /usr/bin/env sh .sqa/script.gummy-denim-chin.sh
+        container: qc.sty_grumpy-dandelion-coati
   QC.Ver:
     repos:
       github.com/bsc-wdc/compss get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-celadon-audemer.sh
-        container: qc.ver_shaggy-flax-coati
+        - /usr/bin/env sh .sqa/script.foggy-heliotrope-heron.sh
+        container: qc.ver_queasy-cyan-bloodhound
 timeout: 5400
